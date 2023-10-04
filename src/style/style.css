@@ -1,0 +1,969 @@
+/*Reset project*/
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/bg/body.jpg);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+li {
+    list-style: none;
+    color: white;
+}
+
+
+/*Reset project*/
+
+
+/*nav*/
+
+nav {
+    background-image: url(../images/texturas/nav.jpg);
+    border-bottom: 3px solid rgb(48, 48, 48);
+    color: white;
+    padding: 15px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 17px;
+    z-index: 999;
+}
+
+nav .logo img {
+    width: 150px;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo label {
+    display: none;
+}
+
+/*animações*/
+
+@keyframes descer{
+    from { transform: translateY(-100%); }
+  to { transform: translateY(0%); }
+}
+
+nav{
+    animation-name: descer;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    transition: 1s;
+}
+
+
+@keyframes opacidade {
+
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+    
+}
+
+.logo img{
+    animation: opacidade 0.5s  ease;
+    animation-delay: 0s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+
+}
+
+.menus ul > :first-child{
+    animation: opacidade 0.5s  ease;
+    animation-delay: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.menus ul > :nth-child(2){
+    opacity: 0;
+    animation-name: opacidade;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.menus ul > :nth-child(3){
+    opacity: 0;
+    animation: opacidade ease;
+    animation-duration: 0.5s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.pesquisa{
+    opacity: 0;
+    animation: opacidade ease;
+    animation-duration: 0.5s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+    
+}
+
+.opcoes{
+    opacity: 0;
+    animation: opacidade ease;
+    animation-duration: 0.5s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    
+}
+
+/*animações*/
+
+
+
+.menus ul {
+    display: flex;
+}
+
+.menus ul li:not(:last-child) {
+    margin-right: 30px;
+}
+
+
+.pesquisa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.pesquisa input {
+    background: none;
+    border: none;
+    font-weight: 600;
+    width: 300px;
+
+
+}
+
+
+.opcoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.opcoes div,
+a:not(:last-child) {
+    margin-right: 15px;
+}
+
+.traducao-op{
+    background-color: white;
+    color: black;
+    padding: 5px;
+    cursor: pointer;
+    display: none;
+
+   
+}
+
+
+#admin {
+    font-size: 25px;
+}
+
+.traducao{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 110px;
+}
+
+#traducao{
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.menus ul li a:hover{
+    color: orange;
+}
+
+.traducao:hover{
+    color: orange;
+    border-color: orange;
+}
+
+#admin:hover{
+    color: orange;
+}
+
+.pesquisa:hover{
+    color: orange;
+    border-color: orange;
+}
+
+input[type="text"] {
+    border: none;
+    outline: none;
+    color: white;
+  }
+
+
+/*menu button*/
+
+.hamburguer {
+    position: relative;
+    display: block;
+    background: #ffffff;
+    width: 30px;
+    height: 2px;
+    transition: 0.5s ease-in-out;
+}
+
+.hamburguer:before,
+.hamburguer:after {
+    background: #ffffff;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+}
+
+.hamburguer:before {
+    top: -10px;
+}
+
+.hamburguer:after {
+    bottom: -10px;
+}
+
+#menu-hamburguer {
+    display: none;
+}
+
+input:checked~label .hamburguer {
+    transform: rotate(45deg);
+}
+
+input:checked~label .hamburguer:before {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+input:checked~label .hamburguer:after {
+    transform: rotate(90deg);
+    bottom: 0;
+}
+
+
+/*menu button*/
+
+
+/*responsivo*/
+
+
+@media (max-width: 1050px) {
+    .pesquisa {
+        display: none;
+    }
+
+    nav .logo img {
+        width: 25%;
+    }
+
+    .menus ul li:not(:last-child) {
+        margin-right: 0px;
+        margin-bottom: 15px;
+    }
+
+    .menus ul li {
+        width: 100%;
+        border-bottom: 3px solid rgba(99, 99, 99, 0.363);
+        padding-bottom: 5px;
+    }
+
+    .nav label {
+        display: flex;
+
+    }
+
+    #admin {
+        font-size: 30px;
+    }
+
+    .menus {
+        width: 80%;
+    }
+
+    .menus ul {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    nav {
+        flex-direction: column;
+        font-size: 27px;
+
+    }
+
+    .opcoes {
+        width: 100%;
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .opcoes a ion-icon {
+        margin-top: 5px;
+    }
+
+    .menus,
+    .pesquisa,
+    .opcoes {
+        display: none;
+
+    }
+
+    .logo {
+        min-width: 100%;
+    }
+
+    .logo label {
+        display: block;
+    }
+
+    .traducao{
+        width: 160px;
+        font-size: 15px;
+    }
+
+}
+
+
+@media (max-width:500px) {
+    nav .logo img {
+        width: 40%;
+    }
+
+    .menus {
+        font-size: 25px;
+    }
+}
+
+
+.on {
+    display: flex;
+}
+
+/*nav*/
+
+
+/* carrossel */
+
+.carrossel{
+    animation: opacidade 0.5s  ease;
+    width: 100%;
+    margin-top: 100px;
+  }
+  
+  .slider{
+    margin: 0 auto;
+    width: 1049.3px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slides{
+    border-radius: 15px;
+    width: 300%;
+
+    display: flex;
+  }
+  
+  .slides input{
+    display: none;
+  }
+  
+  .slide {
+    display: flex;
+    
+    width: 33.33333%;
+    position: relative;
+    transition: 2s;
+  }
+  
+  .slide img{
+    width: 100%;
+  }
+
+  .first {
+    display: flex;
+    
+    width: 33.33333%;
+    position: relative;
+    transition: 2s;
+  }
+  
+  .first img{
+    width: 100%;
+  }
+  
+  .manual-navigation{
+    position: absolute;
+    width: 1049.3px;
+    margin-top: -30px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .manual-btn{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .manual-btn:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  .manual-btn:hover{
+    background-color: white;
+  }
+  
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  
+  #radio2:checked ~ .first{
+    margin-left: -33.33333%;
+  }
+  
+  #radio3:checked ~ .first{
+    margin-left: -66.666666%;
+  }
+  
+  .navigation-auto div{
+    border: 2px solid green;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  
+  .navigation-auto{
+    position: absolute;
+    width: 1049.3px;
+    margin-top: 406.5px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navigation-auto div:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  #radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: white;
+  }
+  
+  #radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: white;
+  }
+  
+  #radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: white;
+  }
+
+  
+  
+  @media (max-width: 1200px){
+  
+    .carrossel{
+        margin-top: 120px;
+        
+      }
+  
+    .slider{
+      border-radius: 5px;
+      width: 95%;
+      
+      
+    }
+  
+    .slide img{
+      width: 100%;
+      
+    }
+  
+    .manual-navigation{
+      display: none;
+    }
+  
+    .navigation-auto{
+      display: none;
+  
+    }
+  }
+  
+  @media (max-width: 500px){
+  
+    .carrossel{
+      margin-top: 100px;
+    }
+  }
+  
+  @media (max-width: 350px){
+  
+    .carrossel{
+      margin-top: 90px;
+    }
+  
+  }
+
+
+/*Carrinho icon*/
+
+.carrinho{
+    animation: opacidade 0.5s  ease;
+    position: fixed;
+    display: flex;
+    z-index: 999;
+    justify-content: flex-end;
+    bottom: 15px;
+    right: 15px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.carrinho span{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: orange;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: 600;
+}
+
+.carrinho ion-icon{
+    font-size: 40px;
+    background-color: #555555;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+
+
+
+
+/*Pesquisa mobile*/
+
+.pesquisa-mobile{
+    animation: opacidade 0.5s  ease;
+    z-index: 10;
+    margin: auto;
+    padding: 5px;
+    border-radius: 5px;
+    width: 50%;
+    border: 2px solid black;
+    display: none;
+    justify-content: space-between;
+}   
+
+.pesquisa-mobile input{
+    width: 100%;
+    color: black;
+}
+
+@media (max-width: 1050px){
+    .pesquisa-mobile{
+        display: flex;
+        width: 95%;
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 885px){
+    .pesquisa-mobile{
+        display: flex;
+        width: 80%;
+
+    }
+}
+
+@media (max-width: 712px){
+    .pesquisa-mobile{
+        display: flex;
+        width: 80%;
+
+    }
+}
+
+
+/*cardápio*/
+
+.cardapio{
+    animation: opacidade 0.5s  ease;
+    width: 100%; 
+    display: grid;
+    justify-content: center;  
+    
+}
+
+.categoria{
+    animation: opacidade 0.5s  ease;
+    width: 1050px;
+    background-color: white;
+    border-top: 5px solid black;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 1px 3px 17px 2px #555555;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.categoria h1{
+    font-weight: 700;
+    margin: 16px;
+    text-align: center;
+}
+
+.produtos{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    
+}
+
+
+.mapBox{
+    width: 100%;
+    display: grid;
+    padding-left: 208px;
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
+
+.card{
+
+    background-image: url(../images/texturas/cards.jpg);
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+    color: rgb(255, 255, 255);
+    position: relative;
+    margin: auto;
+
+}
+
+.card img{
+    border-radius: 7px 7px 0 0;
+    width: 250px;
+    height: 150px;
+    border: 3px solid black;
+}
+
+.card h2{
+    color: orange;
+    margin: 5px 5px 0 5px;
+    font-size: 17px;
+    margin-top: 5px;
+
+}
+
+.card p{
+
+    margin: 5px 5px 0 5px;
+    font-weight: 500;
+    font-size: 13px;
+
+}
+
+.adc{
+    position: absolute;
+    bottom: 0;
+    margin: 5px 5px 5px 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+}
+
+.adc button{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: green;
+    color: black;
+    padding: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 7px;
+    width: 130px;
+}
+
+
+.adc span{
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+
+.adc button ion-icon{
+    color: white;
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+@media (max-width:1200px){
+
+    .cardapio{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .categoria{
+        width: 95%;
+    }
+
+}
+
+@media (max-width: 885px){
+
+    .categoria{
+        width: 80%;
+    }
+    .produtos{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 712px){
+
+    .categoria{
+        width: 80%;
+    }
+
+    .produtos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 325px){
+    .categoria{
+        background: none;
+        box-shadow: none;
+        border: none;
+    }
+}
+
+
+/*Formulario Pagamento*/
+.secPagamento{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudoPagamento{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    box-shadow: 1px 3px 17px 2px #555555;
+    width: 700px;
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+    margin: 100px 0 10px 0;
+}
+
+.conteudoPagamento form{
+
+    margin: 10px 10px 10px;
+}
+
+.conteudoPagamento form input{
+    animation: opacidade 1s  ease;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-weight: 600;
+    margin: 10px 0 10px 0;
+    color: black;
+}
+.conteudoPagamento form input[type=text], input[type=email]{
+    width: 300px;
+}
+
+.conteudoPagamento form label{
+    animation: opacidade 1s  ease;
+    font-weight: 600;
+    margin-top: 10px 0 10px 0;
+}
+
+.conteudoPagamento form button{
+    animation: opacidade 1s  ease;
+    cursor: pointer;
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+    background-color: green;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+/* Modal Pagamento */
+.janela-modal-pagamento{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.507);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+
+.modal-pagamento{
+    width: 25%;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: #ffffff81;
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.janela-modal-pagamento button{
+    animation: opacidade 1s  ease;
+    cursor: pointer;
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+    background-color: green;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+#janela-modal-pagamento.abrir{
+    display: flex;
+}
+
+@keyframes abrirModal{
+    from{
+        opacity: 0;
+        transform: translate3d(0, -20px, -5pc);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
+.abrir .modal-pagamento{
+    animation: abrirModal 1s;
+    overflow: hidden;
+}
+
+/*Fim Formulario Pagamento*/
+
+/*Footer*/
+
+footer{
+    width: 100%;
+    padding: 20px;
+    background-color: #555555;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+/*observer*/
+
+.init-hidden {
+    opacity: 0;
+    transition: opacity 1s linear;
+}
+
+.init-hidden-off {
+    opacity: 1;
+}
+
+
+
+
+
+

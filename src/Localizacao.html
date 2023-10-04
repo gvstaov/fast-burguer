@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/style/style.css" type="text/css">
+    <link rel="icon" href="../src/images/logo/fast-burguer-logo.png" type="image/png">
+    <title>Fast Burguer | Venha até nós </title>
+</head>
+
+<body>
+
+    <!--
+        Nav Bar
+    -->
+
+    <nav>
+        <div class="logo">
+            <img src="../src/images/logo/logo-reduzida.png" alt="">
+            <input id="menu-hamburguer" type="checkbox" onclick="abrirMenu()" />
+            <label for="menu-hamburguer">
+                <div id="menu-button">
+                    <span class="hamburguer"></span>
+                </div>
+            </label>
+        </div>
+
+        <div class="menus" id="menus">
+            <ul>
+                <li><a href="../src/index.html">Cardápio</a></li>
+                <li><a href="../src/Feedback.html">Sugestões</a></li>
+                <li><a href="../src/Localizacao.html">Venha até nós</a></li>
+            </ul>
+        </div>
+      
+        <div class="opcoes" id="opcoes">
+            <div id="google_translate_element">
+            </div>
+            <a href="../src/login.html"><ion-icon id="admin" name="person-circle-outline"></ion-icon></a>
+        </div>
+    </nav>
+
+    <!--
+        Final Nav Bar
+    -->
+
+
+    <!--Carrinho de compras-->
+
+    <section class="carrinho">
+        <a href="../src/carrinho.html">
+          <span id="quantidade-carrinho">0</span>
+          <ion-icon name="cart-outline"></ion-icon>
+        </a>
+      </section>
+
+    <!--
+        Carrossel
+    -->
+  
+    <section class="carrossel">
+        <div class="slider">
+            <div class="slides">
+                <!--Radio-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                
+                <!--Radio-->
+
+                <!--Slide imagens-->
+               
+                <!--Slide imagens-->
+
+                <!--navigation-->
+                <div class="navigation-auto">
+                </div>
+                <!--navigation-->
+            </div>
+
+            <div class="manual-navigation">
+            </div>
+        </div>
+    </section>
+
+    <!--
+        Final Carrossel
+    -->
+
+    <!--Pesquisa mobile-->
+
+
+
+    <!--
+        Cardápio
+    -->
+
+    <section class="cardapio">
+        <div class="categoria ">
+            <h1 class="">Nossa Localização</h1>
+            <p> Endereço: Avenida das Américas, 4666.
+                <p> 22640-102.
+                    <p> Barra da Tijuca, Rio de janeiro
+            </p>
+            <div class="produtos">                     
+                               
+                <div class="mapBox">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.710840484617!2d-43.36070172481268!3d-22.99765827919125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bda484e87aa9d%3A0xc7d7329425cbf250!2sAv.%20das%20Am%C3%A9ricas%2C%204666%20-%20Barra%20da%20Tijuca%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022640-102!5e0!3m2!1sen!2sbr!4v1685192717456!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+                </div>
+            </div>
+        </div>       
+       
+    </section>
+
+
+    <!--
+        Final Cardápio
+    -->
+
+    <!--
+        Footer
+    -->
+    <footer>© 2023 Fast Burger - Todos os direitos reservados.</footer>
+    <!--
+        Final Footer
+    -->
+
+    
+
+
+
+
+
+
+    <!--Scripts-->
+    <script src="../src/model/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <!--Scripts-->
+
+</body>
+
+</html>

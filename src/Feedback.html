@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/style/Feedback.css" type="text/css">
+    <link rel="icon" href="../src/images/logo/fast-burguer-logo.png" type="image/png">
+    <title>Fast Burguer | Pesquisa de Satisfação </title>
+</head>
+
+<body>
+
+    <!--
+        Nav Bar
+    -->
+
+    <nav>
+        <div class="logo">
+            <img src="../src/images/logo/logo-reduzida.png" alt="">
+            <input id="menu-hamburguer" type="checkbox" onclick="abrirMenu()" />
+            <label for="menu-hamburguer">
+                <div id="menu-button">
+                    <span class="hamburguer"></span>
+                </div>
+            </label>
+        </div>
+
+        <div class="menus" id="menus">
+            <ul>
+                <li><a href="../src/index.html">Cardápio</a></li>
+                <li><a href="../src/Feedback.html">Sugestões</a></li>
+                <li><a href="../src/Localizacao.html">Venha até nós</a></li>
+            </ul>
+        </div>
+            <div class="opcoes" id="opcoes">
+            <div id="google_translate_element">
+            </div>
+            <a href="../src/login.html"><ion-icon id="admin" name="person-circle-outline"></ion-icon></a>
+        </div>
+    </nav>
+
+    <!--
+        Final Nav Bar
+    -->
+    <!--Carrinho de compras-->
+
+    <section class="carrinho">
+        <a href="../src/carrinho.html">
+          <span id="quantidade-carrinho">0</span>
+          <ion-icon name="cart-outline"></ion-icon>
+        </a>
+      </section>
+
+
+    <section class="feedback">
+
+        <div style="padding-bottom: 18px; line-height: 110%;"><span style="font-size: 36px;">Pesquisa de Satisfação</span><br>&nbsp;<br>Ajude-nos a melhorar nosso serviço preenchendo este formulário.</div>
+
+        <div style="padding-bottom: 18px; line-height: 75%;">
+            Nome<br>&nbsp;<br>
+            <input class="feedback-input" type="text" id="data_1" name="nome_cliente">
+        </div>
+
+        <div style="padding-bottom: 18px; line-height: 75%;">
+            Numero do Pedido<br>&nbsp;<br>
+            <input class="feedback-input" type="text" id="data_2" name="N_pedido" style="max-width: 100%;">
+        </div>
+
+        <div style="padding-bottom: 18px; line-height: 75%;">
+            Como você avaliaria a qualidade da comida oferecida?<br>&nbsp;<br>
+            <select class="feedback-select" id="data_3" name="qualidade_comida">
+                <option class="feedback-option"style="background-color: LawnGreen;">Excelente</option>
+                <option class="feedback-option"style="background-color: YellowGreen;">Muito Bom</option>
+                <option class="feedback-option"style="background-color: ForestGreen;">Bom</option>
+                <option class="feedback-option"style="background-color: orange;">Razoável</option>
+                <option class="feedback-option"style="background-color: FireBrick;">Ruim</option>
+            </select>
+        </div>
+
+        <div style="padding-bottom: 18px; line-height: 75%;">
+            Qual é a sua impressão geral sobre o restaurante?<br>&nbsp;<br>
+            <select class="feedback-select" id="data_4" name="Nota_restaurante">
+                <option class="feedback-option"style="background-color: LawnGreen;">Excelente</option>
+                <option class="feedback-option"style="background-color: YellowGreen;">Muito Bom</option>
+                <option class="feedback-option"style="background-color: ForestGreen;">Bom</option>
+                <option class="feedback-option"style="background-color: orange;">Razoável</option>
+                <option class="feedback-option"style="background-color: FireBrick;">Ruim</option>
+            </select>
+        </div>
+
+        <div style="padding-bottom: 18px; line-height: 75%;">
+            Você considera o cardápio variado e atrativo?<br>&nbsp;<br>
+            <select class="feedback-select" id="data_5" name="cardapio_variado">
+                <option class="feedback-option"style="background-color: LawnGreen;">Sim</option>
+                <option class="feedback-option"style="background-color: FireBrick;">Não</option>
+            </select>
+        </div>
+
+        <div style="padding-bottom: 18px; line-height: 75%;">
+            O tempo de espera para receber sua refeição foi aceitável?<br>&nbsp;<br>
+            <select class="feedback-select" id="data_6" name="bom_tempo_entrega">
+                <option class="feedback-option"style="background-color: LawnGreen;">Sim</option>
+                <option class="feedback-option"style="background-color: FireBrick;">Não</option>
+            </select>
+        </div>
+
+        <div style="padding-bottom: 18px; line-height: 75%;">
+            O preço dos pratos estava compatível com a qualidade oferecida?<br>&nbsp;<br>
+            <select class="feedback-select" id="data_7" name="valor_bom">
+                <option class="feedback-option"style="background-color: LawnGreen;">Sim</option>
+                <option class="feedback-option"style="background-color: FireBrick;">Não</option>
+            </select>
+        </div>
+
+        <div style="padding-bottom: 18px; line-height: 75%;">
+            Você recomendaria esse restaurante para amigos e familiares?<br>&nbsp;<br>
+            <select class="feedback-select" id="data_8" name="recomendaria">
+                <option class="feedback-option"style="background-color: LawnGreen;">Sim</option>
+                <option class="feedback-option"style="background-color: FireBrick;">Não</option>
+            </select>
+        </div>
+
+
+        <div style="padding-bottom: 18px; line-height: 75%;">
+            Deixe um Comentário<br>&nbsp;<br>
+            <textarea class="feedback-texto" id="data_9" name="opiniao" style="height: 200px; width: 450px;resize: none;"></textarea>
+        </div>
+
+
+        <div style="padding-bottom: 18px;"><button class="feedback-button" id="Enviar" name="Enviar">Enviar</button></div>
+	
+    </section>
+
+
+
+    <!--
+        Footer
+    -->
+    <footer>© 2023 Fast Burger - Todos os direitos reservados.</footer>
+    <!--
+        Final Footer
+    -->
+    <!--Scripts-->    
+	<script src="../src/model/Feedback.js"></script>
+    <script src="../src/model/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <!--Scripts-->
+
+</body>
+
+</html>

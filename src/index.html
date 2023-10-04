@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/style/style.css" type="text/css">
+    <link rel="icon" href="../src/images/logo/fast-burguer-logo.png" type="image/png">
+    <title>Fast Burguer | Home </title>
+</head>
+
+<body>
+
+    <!--
+        Nav Bar
+    -->
+
+    <nav>
+        <div class="logo">
+            <img src="../src/images/logo/logo-reduzida.png" alt="">
+            <input id="menu-hamburguer" type="checkbox" onclick="abrirMenu()" />
+            <label for="menu-hamburguer">
+                <div id="menu-button">
+                    <span class="hamburguer"></span>
+                </div>
+            </label>
+        </div>
+
+        <div class="menus" id="menus">
+            <ul>
+                <li><a href="../src/index.html">Cardápio</a></li>
+                <li><a href="../src/Feedback.html">Sugestões</a></li>
+                <li><a href="../src/Localizacao.html">Venha até nós</a></li>
+            </ul>
+        </div>
+        <div class="pesquisa">
+        <input id="pesquisar" onkeyup="search()" type="text" name="pesquisar" placeholder="Pesquisar">
+        <ion-icon name="search-outline"></ion-icon>
+        </div>
+
+        <div class="opcoes" id="opcoes">
+            <div id="google_translate_element">
+
+            </div>
+            <a href="../src/login.html"><ion-icon id="admin" name="person-circle-outline"></ion-icon></a>
+        </div>
+    </nav>
+
+    <!--
+        Final Nav Bar
+    -->
+
+
+    <!--Carrinho de compras-->
+
+    <section class="carrinho">
+        <a href="../src/carrinho.html">
+          <span id="quantidade-carrinho">0</span>
+          <ion-icon name="cart-outline"></ion-icon>
+        </a>
+      </section>
+      
+      
+      
+
+    <!--
+        Carrossel
+    -->
+  
+    <section class="carrossel">
+        <div class="slider">
+            <div class="slides">
+                <!--Radio-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                
+                <!--Radio-->
+
+                <!--Slide imagens-->
+               
+                <!--Slide imagens-->
+
+                <!--navigation-->
+                <div class="navigation-auto">
+                </div>
+                <!--navigation-->
+            </div>
+
+            <div class="manual-navigation">
+            </div>
+        </div>
+    </section>
+
+    <!--
+        Final Carrossel
+    -->
+
+    <!--Pesquisa mobile-->
+
+    <div class="pesquisa-mobile ">
+        <input id="pesquisar-mobile" onkeyup="searchmobile()" type="text" name="pesquisar" placeholder="Pesquisar">
+        <ion-icon name="search-outline"></ion-icon>
+    </div>
+
+
+    <!--
+        Cardápio
+    -->
+
+    <section class="cardapio">
+        <div class="categoria ">
+            <h1 class="">Hamburguer's</h1>
+            <div id="produtos-containers-hamburguers" class="produtos"></div>
+                </div>
+ 
+        <div class="categoria ">
+            <h1 class="">Bebidas</h1>
+                <div id="produtos-containers-bebidas" class="produtos"></div>
+                </div>
+
+                <div class="categoria ">
+                    <h1 class="">Promoções</h1>
+                        <div id="promocoes-containers" class="produtos"></div>
+                        </div>
+                </section>
+    
+
+
+    <!--
+        Final Cardápio
+    -->
+
+    <!--
+        Footer
+    -->
+    <footer>© 2023 Fast Burger - Todos os direitos reservados.</footer>
+    <!--
+        Final Footer
+    -->
+
+    
+
+
+
+
+
+
+    <!--Scripts-->
+    <script src="../src/model/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <!--Scripts-->
+
+</body>
+
+</html>

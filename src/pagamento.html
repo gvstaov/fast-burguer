@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/style/style.css" type="text/css">
+    <link rel="icon" href="../src/images/logo/fast-burguer-logo.png" type="image/png">
+    <title>Fast Burguer | Pagamento </title>
+</head>
+
+<body onload="carregaDadosCarrinho()">
+
+    <!--
+        Nav Bar
+    -->
+
+    <nav>
+        <div class="logo">
+            <img src="../src/images/logo/logo-reduzida.png" alt="">
+            <input id="menu-hamburguer" type="checkbox" onclick="abrirMenu()" />
+            <label for="menu-hamburguer">
+                <div id="menu-button">
+                    <span class="hamburguer"></span>
+                </div>
+            </label>
+        </div>
+
+        <div class="menus" id="menus">
+            <ul>
+                <li><a href="../src/index.html">Cardápio</a></li>
+                <li><a href="../src/Feedback.html">Sugestões</a></li>
+                <li><a href="../src/Localizacao.html">Venha até nós</a></li>
+            </ul>
+        </div>
+        <div class="pesquisa">
+            <input type="text" id="pesquisar" name="pesquisar" placeholder="Pesquisar">
+            <ion-icon name="search-outline"></ion-icon>
+        </div>
+        <div class="opcoes" id="opcoes">
+            <div id="google_translate_element">
+            </div>
+            <a href="../src/login.html"><ion-icon id="admin" name="person-circle-outline"></ion-icon></a>
+        </div>
+    </nav>
+
+    <!--
+        Final Nav Bar
+    -->
+
+   
+    <!--Pesquisa mobile-->
+
+    <div class="pesquisa-mobile ">
+        <input type="text" id="pesquisar-mobile" name="pesquisar-mobile" placeholder="Pesquisar">
+        <ion-icon name="search-outline"></ion-icon>
+    </div>
+
+    
+    <!--
+        Dados para pagamento
+    -->
+
+    <section class="secPagamento">
+        <div class="conteudoPagamento">
+                <form name="formPagamento" method="dialog">
+                    <label for="Nome">Nome</label> <br>
+                    <input type="text" name="nome" id="nome" required> <br>
+                    <label for="E-mail">E-mail</label> <br>
+                    <input type="email" name="email" id="email" required> <br>
+                    <label for="Telefone">Telefone</label> <br>    
+                    <input type="text" name="telefone" id="telefone" required> <br>
+                    <label for="DataNascimento">Data de Nascimento</label> <br> 
+                    <input type="date" name="dtaNascimento" id="dtaNascimento" required> <br>
+                    <label for="Cep">CEP</label><br>
+                    <input type="text" name="cep" id="cep" onblur="consultaCEP(this.value);" required> <br>
+                    <label for="Endereco">Endereço</label> <br>
+                    <input type="text" name="logradouro" id="logradouro" placeholder="Endereço" required>
+                    <input type="text" name="numero" id="numero" placeholder="Número" required>
+                    <input type="text" name="bairro" id="bairro" placeholder="Bairro" required>
+                    <input type="text" name="cidade" id="cidade" placeholder="Cidade" required> <br>
+                    <label for="Telefone">Valor a Pagar</label>    
+                    <input type="text" name="valor" id="valor" value="150,00" readonly> <br>
+                    <input type="hidden" name="produto" id="produto" value="x-salada" readonly>
+                    <input type="hidden" name="quantidade" id="quantidade" value="1" readonly>
+                    <label for="FormaPagamento">Forma de Pagamento</label> <br>
+                    <fieldset>
+                        <input type="radio" name="formaPgm" value="Dinheiro" checked> Dinheiro (Na Entrega) <br>
+                        <input type="radio" name="formaPgm" value="Pix"> PIX <br>
+                        <input type="radio" name="formaPgm" value="Cartao"> Cartão de Credito ou Débito (Na Entrega) <br>
+                        <input type="radio" name="formaPgm" value="Refeicao"> Cartão Refeição (Na Entrega) <br>
+                    </fieldset> <br>        
+                    <button onclick="ConfirmarPagamento()" class="btn"><ion-icon name="checkmark-circle-outline"></ion-icon>&nbsp Confirmar</button>
+                </form>
+        </div>
+    </section>
+
+    
+    <!--
+        Modal Confirmação
+    -->
+
+    <div class="janela-modal-pagamento" id="janela-modal-pagamento">
+        <div class="modal-pagamento">
+            <h1 id="h1ModConfPedido">Pedido Confirmado!</h1>
+            <p>Obrigado pela preferência</p> <br>
+            <button class="btn"><a href="../src/index.html"><ion-icon name="close-circle-outline"></ion-icon>&nbsp Fechar </a></button>
+        </div>
+        <!-- PIX
+        <div class="modal-pix">
+            <img src/images/qrcode-pix.png>
+            <p>Efetue o pagamento pelo QR-Code</p> <br>
+            <button class="btn"><a href="../src/index.html"><ion-icon name="close-circle-outline"></ion-icon>&nbsp Fechar </a></button>
+        </div>
+        -->
+    </div>
+
+    <!--
+        Fim Modal Confirmação
+    -->
+
+
+    <!--
+        Footer
+    -->
+    <footer>© 2023 Fast Burger - Todos os direitos reservados.</footer>
+    <!--
+        Final Footer
+    -->
+
+    <!--Scripts-->
+    <script src="../src/model/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <!--Scripts-->
+
+
+</body>
+
+</html>

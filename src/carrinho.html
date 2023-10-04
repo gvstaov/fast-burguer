@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title> Fast Burguer | Carrinho</title>
+    <!-- meta tags -->
+    <link rel="icon" href="../src/images/logo/fast-burguer-logo.png" type="image/png">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet"href="../src/style/carrinho.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- Tabela carrinho -->
+    
+    <section class="mt-5">
+        <div class="container">
+            <div class="cart">
+            <div class="table-responsive">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col"class="text-white">PRODUTO</th>
+                            <th scope="col"class="text-white"width="15%">VALOR UNITÁRIO</th>
+                            <th scope="col"class="text-white"width="15%">QUANTIDADE</th>
+                            <th scope="col"class="text-white"width="15%">TOTAL</th>
+                            <th scope="col"class="text-white"width="15%">REMOVER ITEM</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Tabela subtotal -->
+<table class="subtotal">
+    <tbody>
+      <tr>
+        <td class="table-centered">SUBTOTAL</td>
+        <td id="subtotal-value" class="table-centered">R$</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <!-- Tabela desconto -->
+  <table class="desconto">
+    <tbody>
+      <tr>
+        <td class="table-centered">DESCONTO</td>
+        <td id="desconto-value" class="table-centered">R$</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <!-- Tabela total -->
+  <table class="total">
+    <tbody>
+      <tr>
+        <td class="table-centered">TOTAL A PAGAR</td>
+        <td id="total-value" class="table-centered">R$</td>
+      </tr>
+    </tbody>
+  </table>
+    <!-- Botões -->
+    <div class="botao1">
+        <botao1 id="save-button" onclick="window.location.href = '../src/index.html'">ESCOLHER MAIS PRODUTOS</botao1>
+      </div>      
+    <div class="botao2">
+        <botao2 onclick="window.location.href = '../src/pagamento.html'">FECHAR PEDIDO</botao2>
+    </div>
+
+    <div class="custom-search">
+        <input id="cupom-select" class="custom-search-input" placeholder="CUPOM DE DESCONTO">
+    </input>
+        <button id="cupom-apply" class="custom-search-botton" type="button">APLICAR</button>
+      </div>
+    <!-- Scripts -->
+    <script src="../src/model/carrinho.js"></script>
+<!-- Scripts -->
+
+    <!--Footer-->
+  <footer>© 2023 Fast Burger - Todos os direitos reservados.</footer>
+<!--Footer-->
+  
+  </body>
+</html>

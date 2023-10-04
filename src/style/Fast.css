@@ -1,0 +1,30 @@
+*{box-sizing: border-box;
+  padding: 0;
+  margin: 0; 
+}
+
+.content {
+display:flex;
+margin: auto;
+}
+
+.rTable {
+      width: 100%;
+      text-align: center;
+
+}
+
+.rTable thead {
+    background: black;
+    font-weight: bold;
+    color: #fff;
+}
+
+.content {
+    overflow: scroll;
+    max-width: 100%;
+}
+
+
+
+

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/style/pedidos.css" type="text/css">
+    <link rel="icon" href="../src/images/logo/fast-burguer-logo.png" type="image/png">
+    <title>Fast Burguer | Admin </title>
+</head>
+
+<body onload = "exibirVenda()">
+
+    <!--
+        Nav Bar
+    -->
+
+    <nav>
+        <div class="logo">
+            <img src="../src/images/logo/logo-reduzida.png" alt="">
+            <input id="menu-hamburguer" type="checkbox" onclick="abrirMenu()"/>
+            <label for="menu-hamburguer">
+                <div id="menu-button">
+                    <span class="hamburguer"></span>
+                </div>
+            </label>
+        </div>
+
+        <div class="menus" id="menus">
+            <ul>
+                <li><a href="admin-cadastro.html">Cadastrar Produtos</a></li>
+                <li><a href="admin-cadastro-promocoes.html">Cadastrar Promoções</a></li>
+                <li><a href="pedidos.html">Gerenciar Pedidos</a></li>
+                <li><a href="cupons.html">Gerenciar Cupons</a></li>
+				<li><a href="admin-feedback.html">Gerenciar Feedback</a></li>                
+            </ul>
+        </div>
+        <div class="opcoes" id="opcoes">
+            <a href="index.html"><ion-icon name="log-out-outline" style="font-size: 30px;"></ion-icon></a>
+        </div>
+    </nav>
+
+    <!--
+        Final Nav Bar
+    -->
+
+    <!--
+        Tabela de Vendas (Igor)
+    -->
+
+    <section class="pedidos">
+    <h3>Gerenciamento de vendas</h3>
+    <div class="content">
+        <table id="tabelaPedidos" class="rTable">
+            <thead>
+                <tr>
+                    <th>Numero do pedido</th>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Telefone</th>
+                    <th>Logradouro</th>
+                    <th>Numero</th>
+                    <th>Cidade</th>
+                    <th>Forma de pagamento</th>
+                    <th>Produto</th>
+                    <th>Quantidade</th>
+                    <th>Valor</th>
+                    <th>Excluir</th>
+                </tr>
+            </thead>
+            
+        </table>
+    </div>
+    </section>
+
+    <!--
+        Final Tabela de Vendas
+    -->
+
+
+
+
+
+    <!--
+        Footer
+    -->
+    <footer>© 2023 Fast Burger - Todos os direitos reservados.</footer>
+    <!--
+        Final Footer
+    -->
+
+    <!--Scripts-->
+    <script src="../src/model/fast.js"></script>
+    <script src="../src/model/pedidos.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!--Scripts-->
+
+</body>
+
+</html>

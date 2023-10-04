@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/admin-cupom.css" type="text/css">
+    <link rel="icon" href="images/logo/fast-burguer-logo.png" type="image/png">
+    <title>Fast Burguer | Admin </title>
+</head>
+
+<body>
+
+    <!--
+        Nav Bar
+    -->
+
+    <nav>
+        <div class="logo">
+            <img src="images/logo/logo-reduzida.png" alt="">
+            <input id="menu-hamburguer" type="checkbox" onclick="abrirMenu()" />
+            <label for="menu-hamburguer">
+                <div id="menu-button">
+                    <span class="hamburguer"></span>
+                </div>
+            </label>
+        </div>
+
+        <div class="menus" id="menus">
+            <ul>
+                <li><a href="admin-cadastro.html">Cadastrar Produtos</a></li>
+                <li><a href="admin-cadastro-promocoes.html">Cadastrar Promoções</a></li>
+                <li><a href="pedidos.html">Gerenciar Pedidos</a></li>
+                <li><a href="cupons.html">Gerenciar Cupons</a></li>
+				<li><a href="admin-feedback.html">Gerenciar Feedback</a></li>                
+            </ul>
+        </div>
+        <div class="opcoes" id="opcoes">
+            <a href="index.html"><ion-icon name="log-out-outline" style="font-size: 30px;"></ion-icon></a>
+        </div>
+    </nav>
+
+    <!--
+        Final Nav Bar
+    -->
+
+
+    <!--
+        Gerenciamento de cupons
+    -->
+
+
+    <section class="adicionar">
+        <div class="inputs">
+            <label for="nome">Código</label>
+            <input type="text" id="name" name="name" placeholder="Código do Cupom">
+            <label for="preco">Desconto</label>
+            <input type="number" id="preco" name="preco" placeholder="Desconto em %">
+        </div>
+        <button onclick="adc()">Adicionar cupom</button>
+    </section>
+
+    <section class="cupons" id="cupons">
+       <!-- <div class="card-cupom">
+          <ion-icon name="ticket-outline"></ion-icon>
+          <span class="cod">BURGUER-DO-MES</span>
+          <span class="desc">30%</span>
+          <span class="sta">Usado</span>
+          <button onclick="remover(this)">Remover</button>
+        </div>
+        <div class="card-cupom">
+          <ion-icon name="ticket-outline"></ion-icon>
+          <span class="cod">BURGUER10</span>
+          <span class="desc">10%</span>
+          <span class="sta">Usado</span>
+          <button onclick="remover(this)">Remover</button>
+        </div>
+        <div class="card-cupom">
+          <ion-icon name="ticket-outline"></ion-icon>
+          <span class="cod">BURGUER20</span>
+          <span class="desc">20%</span>
+          <span class="sta">Usado</span>
+          <button onclick="remover(this)">Remover</button>
+        </div>-->
+      </section>
+
+    <!--
+        Gerenciamento de cupons
+    -->
+    
+
+
+    
+    <!--
+        Footer
+    -->
+    <footer>© 2023 Fast Burger - Todos os direitos reservados.</footer>
+    <!--
+        Final Footer
+    -->
+
+    <!--Scripts-->
+    <script>window.onload = function() {
+  
+        var cuponsLocal = JSON.parse(localStorage.getItem("cuponsLocal"))
+        
+        for (var i = 0; i < cuponsLocal.length; i++) { 
+            var cuponsConteudo = document.getElementById('cupons')
+            var cupons = cuponsConteudo.innerHTML
+            var cupom = cuponsLocal[i];
+            var novoConteudo = cupons + `<div class="card-cupom">
+                <ion-icon name="ticket-outline"></ion-icon>
+                <span class="cod">`+ cupom.nome + `</span>
+                <span class="desc">`+ cupom.valor + `</span>
+                <span class="sta">Usado</span>
+                <button onclick="remover(this)">Remover</button>
+            </div>`
+            cuponsConteudo.innerHTML = novoConteudo
+        }}
+    
+      // Função para remover a div ao clicar no botão "Remover"
+      function remover(button) {
+      var divRemover = button.parentNode;
+      var nome = divRemover.querySelector('.cod').textContent;
+      var valor = divRemover.querySelector('.desc').textContent;
+    
+      // Remover a div do DOM
+      divRemover.remove();
+    
+      // Remover do local storage
+      var cuponsLocal = JSON.parse(localStorage.getItem("cuponsLocal"));
+      var objetoRemover = cuponsLocal.find(function(cupom) {
+        return cupom.nome === nome && cupom.valor === valor;
+      });
+    
+      if (objetoRemover) {
+        var index = cuponsLocal.indexOf(objetoRemover);
+        if (index !== -1) {
+          cuponsLocal.splice(index, 1);
+          localStorage.setItem("cuponsLocal", JSON.stringify(cuponsLocal));
+        }
+      }}
+         
+        </script>
+    <script src="model/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!--Scripts-->
+
+
+</body>
+
+</html>

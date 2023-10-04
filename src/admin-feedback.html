@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/style/Feedback-adm.css" type="text/css">
+    <link rel="icon" href="../src/images/logo/fast-burguer-logo.png" type="image/png">
+    <title>Fast Burguer | Admin </title>
+</head>
+
+<body onload="buildTable(FeedBack)">
+
+    <!--
+        Nav Bar
+    -->
+
+    <nav>
+        <div class="logo">
+            <img src="../src/images/logo/logo-reduzida.png" alt="">
+            <input id="menu-hamburguer" type="checkbox" onclick="abrirMenu()"/>
+            <label for="menu-hamburguer">
+                <div id="menu-button">
+                    <span class="hamburguer"></span>
+                </div>
+            </label>
+        </div>
+
+        <div class="menus" id="menus">
+            <ul>			
+                <li><a href="admin-cadastro.html">Cadastrar Produtos</a></li>
+                <li><a href="admin-cadastro-promocoes.html">Cadastrar Promoções</a></li>
+                <li><a href="pedidos.html">Gerenciar Pedidos</a></li>
+                <li><a href="cupons.html">Gerenciar Cupons</a></li>
+				<li><a href="admin-feedback.html">Gerenciar Feedback</a></li>
+				
+            </ul>
+        </div>
+        <div class="opcoes" id="opcoes">
+            <a href="index.html"><ion-icon name="log-out-outline" style="font-size: 30px;"></ion-icon></a>
+        </div>
+    </nav>
+
+    <!--
+        Final Nav Bar
+    -->
+
+    <!--
+        Tabela de Vendas (Igor)
+    -->
+
+    <section class="pedidos">
+    <h3>Gerenciamento de vendas</h3>
+    <div class="content">
+        <table class="rTable">
+				<thead>
+					<tr>
+					<th>Nome do cliente</th>
+                    <th>Numero do pedido</th>
+                    <th>Qualidade da comida</th>
+                    <th>Impressão geral do restaurante</th>	
+                    <th>Cardapio é variado</th>	
+                    <th>Tempo de entrega é bom</th>	
+                    <th>Valor é bom</th>	
+                    <th>Recomendaria esse restaurante</th>	
+					<th>Comentário</th>
+					</tr>
+				</thead>
+
+					<tbody id="tabelafeedback">
+        
+					</tbody>
+		</table>
+    </div>
+    </section>
+
+    <!--
+        Final Tabela de Vendas
+    -->
+
+
+
+
+
+
+    <!--
+        Footer
+    -->
+    <footer>© 2023 Fast Burger - Todos os direitos reservados.</footer>
+    <!--
+        Final Footer
+    -->
+
+    <!--Scripts-->
+	<script src="../src/model/Feedback.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!--Scripts-->
+
+</body>
+
+</html>
+	buildTable(FeedBack);
+	console.log(FeedBack);
