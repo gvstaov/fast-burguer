@@ -9,16 +9,6 @@
 
 Site com intuito de aumentar a visilidade e realizar pedidos da Fast Burguer Hamburgueria, tendo funcionalidades que auxiliem tanto o cliente quanto o vendedor  utilizando apenas recursos Front-End.
 
-## Integrantes
-
-* Daniel Araujo Pinto
-* Gustavo Santos Silva
-* Igor Ribeiro de Souza
-* Jaderson Coelho Dutra
-* Junio Firmino
-* Lucas Brandão Guedes
-* Luigi von Blücher Mezzogori
-
 
 ## Orientador
 
