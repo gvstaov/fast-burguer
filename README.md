@@ -1,5 +1,5 @@
 <img width="300px" alt="logo" src="src/images/logo/fast-burguer-logo.png">
-# Site para Fast Burguer Hambugueria.
+Site para Fast Burguer Hambugueria.
 
 `CURSO: Sistemas de Informação`
 
