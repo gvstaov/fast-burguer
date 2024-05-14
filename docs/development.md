@@ -1,6 +1,6 @@
 # Programação de Funcionalidades
 
-### RF-001	Gerenciar cardápios    -    Jaderson Coelho Dutra
+### RF-001	Gerenciar cardápios
 ![cardapio](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-ead-2023-1-e1-proj-web-t2-g3-hamburgueria/assets/127332121/2bccf05f-73ac-4be8-90d9-26bc2a5f0965)
 
 Para atender ao requisito gerenciar cardapios foram criadas seções separadas contemplando o carrossel, a seção de lanches, e a seção de bebidas.
@@ -47,7 +47,7 @@ Para atender ao requisito gerenciar cardapios foram criadas seções separadas c
     </section>
 ```
 
-### RF-002	Gerenciar promoções/produto     -   Lucas Guedes
+### RF-002	Gerenciar promoções/produto
 ![cadastro_promocao](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-ead-2023-1-e1-proj-web-t2-g3-hamburgueria/assets/127332121/9956d2d0-91ef-4df1-b8db-2198c020e143)
 
 Para atender ao requisito gerenciar promoções/produto foi criada uma seção onde é feito o cadastro da promoção/produto e outra seção onde as informações cadastradas aparecem.
@@ -77,7 +77,7 @@ Para atender ao requisito gerenciar promoções/produto foi criada uma seção o
     </section>
 ```
 
-### RF-003	Gerenciar pedidos    -    Igor Ribeiro
+### RF-003	Gerenciar pedidos
 ![pedidos](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-ead-2023-1-e1-proj-web-t2-g3-hamburgueria/assets/127332121/751a2b7c-c9d0-4874-b795-eb71b6fe6e16)
 
 Para atender ao requisito gerenciar pedidos foi criado uma tabela que receberá as informações geradas após a finalização da compra.
@@ -106,7 +106,7 @@ Para atender ao requisito gerenciar pedidos foi criado uma tabela que receberá 
     </section>
 ```
 
-### RF-004	Pesquisar por itens no cardápio    -    Jaderson Coelho Dutra
+### RF-004	Pesquisar por itens no cardápio
 ![barra_de_pesquisa](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-ead-2023-1-e1-proj-web-t2-g3-hamburgueria/assets/127332121/74ce85dc-854a-44b6-ad60-262ff3aceaee)
 
 Para atender ao requisito pesquisar por itens no cardápio foi criado um campo no navbar utlizando uma div.
@@ -118,7 +118,7 @@ Para atender ao requisito pesquisar por itens no cardápio foi criado um campo n
         </div>
 ```
 
-### RF-005	Gerenciar formas de pagamento (PIX, cartão, dinheiro)    -    Daniel Araújo
+### RF-005	Gerenciar formas de pagamento (PIX, cartão, dinheiro)
 ![pagamento](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-ead-2023-1-e1-proj-web-t2-g3-hamburgueria/assets/127332121/bdc2d60c-fd96-46f9-be0c-1544f5cd164e)
 
 Para atender ao requisito gerenciar formas de pagamento foi criado um formulário para preenchimento das informações.
@@ -155,7 +155,7 @@ Para atender ao requisito gerenciar formas de pagamento foi criado um formulári
     </section>
 ```
 
-### RF-006	Gerenciar cupons de desconto    -    Junio Firmino
+### RF-006	Gerenciar cupons de desconto
 ![gerenciar_cupom](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-ead-2023-1-e1-proj-web-t2-g3-hamburgueria/assets/127332121/a65810c1-b93f-4c04-beb3-c1514c4afb16)
 
 Para atender ao requisito gerenciar cupons de desconto foi criada uma seção onde é feito o cadastro do cupom e outra seção onde as informações cadastradas aparecem.
@@ -172,7 +172,7 @@ Para atender ao requisito gerenciar cupons de desconto foi criada uma seção on
     </section>
 ```
 
-### RF-007	Visualização de endereço com mapa    -    Junio Firmino
+### RF-007	Visualização de endereço com mapa
 ![localizacao](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-ead-2023-1-e1-proj-web-t2-g3-hamburgueria/assets/127332121/60b421f3-7839-492c-9bc4-c0047ffea1eb)
 
 Para atender ao requisito visualização de endereço com mapa foi utilizada a API do Google Maps.
@@ -196,7 +196,7 @@ Para atender ao requisito visualização de endereço com mapa foi utilizada a A
     </section>
 ```
 
-### RF-008	Tradução da página para inglês    -    Gustavo Silva
+### RF-008	Tradução da página para inglês
 ![traducao](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-ead-2023-1-e1-proj-web-t2-g3-hamburgueria/assets/127332121/f40854c5-dc2b-4a41-835d-d233a70fc850)
 
 Para atender ao requisito Tradução da página para inglês foi criado um campo no navbar utlizando div e span para fazer a caixa de seleção.
@@ -208,7 +208,7 @@ Para atender ao requisito Tradução da página para inglês foi criado um campo
 </div>
 ```
 
-### RF-009	Cadastrar e gerenciar feedback dos clientes    -    Luigi Mezzogori
+### RF-009	Cadastrar e gerenciar feedback dos clientes
 ![feedback](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-ead-2023-1-e1-proj-web-t2-g3-hamburgueria/assets/127332121/b6b83e02-f29f-4a05-84d3-bc3dfeba1f3e)
 
 Para atender ao requisito cadastrar e gerenciar feedback dos clientes foi criado um formulário com campos com opções de avaliação preenchidas onde o cliente escolhe a melhor opção.
@@ -226,7 +226,7 @@ Para atender ao requisito cadastrar e gerenciar feedback dos clientes foi criado
         </div>
 ```
 
-### RF-010	Gerenciar dados dos usuários    -    Igor Ribeiro
+### RF-010	Gerenciar dados dos usuários
 ![login](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-ead-2023-1-e1-proj-web-t2-g3-hamburgueria/assets/127332121/9e706647-450f-40ce-9c4a-60ac4b038a72)
 
 Para atender ao requisito gerenciar dados dos usuários foi criado campos utlizando div's, labels e inputs.
