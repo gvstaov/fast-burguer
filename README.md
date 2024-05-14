@@ -7,7 +7,7 @@
 
 `SEMESTRE: 1º`
 
-Site com intuito de aumentar a visilidade e realizar pedidos da Fast Burguer Hamburgueria, tendo funcionalidades que auxiliem tanto o cliente quanto o vendedor  utilizando apenas recursos Front-End.
+Site com intuito de aumentar a visilidade e realizar pedidos da Fast Burguer Hamburgueria, tendo funcionalidades que auxiliem tanto o cliente quanto o vendedor  utilizando recursos Front-End.
 
 
 ## Orientador
